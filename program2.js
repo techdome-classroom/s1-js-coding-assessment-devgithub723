@@ -3,7 +3,7 @@ const decodeTheRing = function (s, p) {
   const m = s.length;
   const n = p.length;
   
-  // DP table
+  
   const dp = Array(m + 1).fill(false).map(() => Array(n + 1).fill(false));
 
   // Base case: empty pattern matches empty string
