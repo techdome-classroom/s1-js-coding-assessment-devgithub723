@@ -29,7 +29,7 @@ const decodeTheRing = function (s, p) {
       }
   }
 
-  // The answer is in the last cell of the DP table
+
   return dp[m][n];
 };
 
