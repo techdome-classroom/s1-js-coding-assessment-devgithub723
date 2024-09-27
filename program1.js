@@ -16,7 +16,7 @@ const getTotalIsles = function(grid) {
   let islandCount = 0;
 
   const dfs = (i, j) => {
-      // Base case: if out of bounds or current cell is water, return
+      
       if (i < 0 || j < 0 || i >= numRows || j >= numCols || grid[i][j] === 'W') {
           return;
       }
