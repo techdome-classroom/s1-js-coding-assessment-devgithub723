@@ -20,10 +20,10 @@ const decodeTheRing = function (s, p) {
   for (let i = 1; i <= m; i++) {
       for (let j = 1; j <= n; j++) {
           if (p[j - 1] === '*') {
-              // '*' can match any sequence, so we can ignore '*' or match one character
+              
               dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
           } else if (p[j - 1] === '?' || p[j - 1] === s[i - 1]) {
-              // '?' can match one character, or the characters must match
+ 
               dp[i][j] = dp[i - 1][j - 1];
           }
       }
