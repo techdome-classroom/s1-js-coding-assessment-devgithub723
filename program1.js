@@ -33,7 +33,7 @@ const getTotalIsles = function(grid) {
 
   for (let i = 0; i < numRows; i++) {
       for (let j = 0; j < numCols; j++) {
-          // If we find an unvisited landmass, it's a new island
+          
           if (grid[i][j] === 'L') {
               islandCount++;
               dfs(i, j); // Mark all connected landmasses as visited
